@@ -159,6 +159,10 @@ img.left, figure.left {
     #banner h1 a:hover, #banner h1 a:active {
       color: #113D8B;
       text-shadow: 1px 1px #fff; }
+  #banner h2 {
+    text-align: center;
+    color: #000000;
+    }
   #banner .nav > li > a {
     font-family: Overlock, sans-serif;
     font-weight: bold; }

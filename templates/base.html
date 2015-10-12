@@ -44,8 +44,9 @@
         <div class="span10 offset1">
             <header id="banner" >
                 <h1>
-                    <a href="{{ SITEURL }}/">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
-                </h1>
+                    <a href="{{ SITEURL }}/">{{ SITENAME }}</a>
+		</h1>
+		{% if SITESUBTITLE %} <h2>{{ SITESUBTITLE }}</h2>{% endif %}
                 <nav class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
