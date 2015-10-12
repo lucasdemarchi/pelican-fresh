@@ -24,7 +24,11 @@
                             </header>
                             <div class="entry-content">
                                 {% include 'article_infos.html' %}
-                                {{ article.summary }}
+                                {% if loop.first and not articles_page.has_previous()  %}
+                                        {{ article.content }}
+                                {% else %}
+                                        {{ article.summary }}
+                                {% endif %}
                                 <p class="readmore">
                                     <a class="btn btn-small btn-info" href="{{ SITEURL }}/{{ article.url }}">Read more...</a>
                                 </p>
